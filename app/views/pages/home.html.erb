@@ -1,2 +1,30 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
+
+<div class = "container">
+<h1>Are you looking for a book?</h1>
+
+
+<form id="content">
+  <input type="text" name="input" class="input">
+  <button type="reset" class="search"></button>
+</form>
+<!-- <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What book do you want to borrow?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+ -->
+
+
+<h2 id="full-list">
+  <%= link_to books_path do %>
+    <i class="fas fa-list-ul"></i>
+  <% end  %>
+</h2>
+</div>
+
