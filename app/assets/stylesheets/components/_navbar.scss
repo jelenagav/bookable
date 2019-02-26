@@ -1,19 +1,21 @@
 /* Main navbar */
 .navbar-light_bulb {
+
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: #F4F569;
+  background: #FCE317;
   margin: auto;
   transition: all 0.3s ease;
   height: 70px;
-  padding: 0px 30px;
+  padding: 40px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: black;
 }
 
 /* Logo */
 .navbar-light_bulb img {
-  height: 50px;
+  height: 60px;
 }
 
 /* User Avatar */
@@ -38,11 +40,12 @@
 
 /* Navbar link */
 .navbar-light_bulb-link {
-  color: #616668;
-  font-size: 14px;
+
+  color: black;
+  font-size: 18px;
 }
 .navbar-light_bulb-link:hover {
-  color: #da552f;
+  color: #97989A;
   text-decoration: none;
 }
 
