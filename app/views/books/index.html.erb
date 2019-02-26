@@ -4,7 +4,7 @@
   <% @books.each do |book| %>
   <div class="card">
     <div class="product-img">
-      <img src="<%= cl_image_path @book.photo, height: 420, width: 262, crop: :fill %>"/>
+      <%= cl_image_tag book.photo, height: 420, width: 262, crop: :fill %>
     </div>
     <div class="product-info">
       <div class="product-text">
