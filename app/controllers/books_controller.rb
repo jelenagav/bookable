@@ -3,18 +3,21 @@ before_action :find_book, only: [:show, :destroy]
 skip_before_action :authenticate_user!, only: [:home, :index]
 
   def index
-    @books = Book.all
+    @books = policy_scope(Book.all)
   end
 
   def show
+    authorize @book
   end
 
   def new
     @book = Book.new
+    authorize @book
   end
 
   def create
     @book = Book.new(book_params)
+    authorize @book
 
     if (@book.save)
      redirect_to book_path(@book)
