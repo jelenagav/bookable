@@ -4,15 +4,17 @@
       <h2 class="text-left">Add a new book</h2>
       <div class="form-group">
         <%= simple_form_for(@book) do |f| %>
-        <%=  f.label :author, "author" %>
-        <%=  f.text_field :author %> <br>
-        <%=  f.label :title, "title" %>
-        <%=  f.text_field :title %> <br>
-        <%=  f.label :description, "description" %>
-        <%=  f.text_field :description %> <br>
-        <%=  f.label :publication_year, "publication year" %>
-        <%=  f.text_field :publication_year %> <br> <br>
-        <%=  f.submit %>
+          <%=  f.label :author, "author" %>
+          <%=  f.text_field :author %> <br>
+          <%=  f.label :title, "title" %>
+          <%=  f.text_field :title %> <br>
+          <%=  f.label :description, "description" %>
+          <%=  f.text_field :description %> <br>
+          <%=  f.label :publication_year, "publication year" %>
+          <%=  f.text_field :publication_year %> <br>
+          <%=  f.input :photo %>
+          <%=  f.input :photo_cache, as: :hidden %> <br> <br>
+          <%=  f.submit %>
         <% end %>
       </div>
     </div>

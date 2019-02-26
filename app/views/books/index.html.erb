@@ -4,7 +4,7 @@
   <% @books.each do |book| %>
   <div class="card">
     <div class="product-img">
-      <img src="https://s.s-bol.com/imgbase0/imagebase3/large/FC/4/3/9/8/1001004006078934.jpg" height="420" width="262" />
+      <img src="<%= cl_image_path @book.photo, height: 420, width: 262, crop: :fill %>"/>
     </div>
     <div class="product-info">
       <div class="product-text">
