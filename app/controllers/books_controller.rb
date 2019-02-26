@@ -11,12 +11,14 @@ skip_before_action :authenticate_user!, only: [:home, :index]
   end
 
   def new
+    @user = current_user
     @book = Book.new
     authorize @book
   end
 
   def create
     @book = Book.new(book_params)
+    @book.user = current_user
     authorize @book
 
     if (@book.save)
@@ -32,7 +34,7 @@ skip_before_action :authenticate_user!, only: [:home, :index]
   private
 
   def book_params
-    params.require(:book).permit(:title, :author, :description, :publication_date)
+    params.require(:book).permit(:title, :author, :description, :publication_year)
   end
 
   def find_book
