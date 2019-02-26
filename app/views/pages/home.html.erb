@@ -3,8 +3,10 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
 
 <div class = "container">
-<h1>Are you looking for a book?</h1>
-
+<h1>Are you looking for a
+  <span class="typer" id="main" data-words="book?" data-colors="" data-delay="100" data-deleteDelay="1000"></span>
+  <span class="cursor" data-owner="main"></span>
+</h1>
 
 <form id="content">
   <input type="text" name="input" class="input">
@@ -27,4 +29,6 @@
   <% end  %>
 </h2>
 </div>
+
+<script src="typer.js"></script>
 
