@@ -1,28 +1,20 @@
-<html lang="en">
 
-<head>
-  <title>Harvest vase</title>
-  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
-</head>
 
-<body>
-  <div class="wrapper">
+<div class="cards">
+  <% @books.each do |book| %>
+  <div class="card">
     <div class="product-img">
-      <img src="http://bit.ly/2tMBBTd" height="420" width="327">
+      <img src="https://s.s-bol.com/imgbase0/imagebase3/large/FC/4/3/9/8/1001004006078934.jpg" height="420" width="262" />
     </div>
     <div class="product-info">
       <div class="product-text">
-        <h1>Harvest Vase</h1>
-        <h2>by studio and friends</h2>
-        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+        <h1> <%= book.title %> </h1>
+        <h2> <%= book.author %>  </h2>
+        <p> <%= book.description %> </p>
       </div>
       <div class="product-price-btn">
-        <p><span>78</span>$</p>
-        <button type="button">buy now</button>
+       <div id="link"> <button type="button"> <%= link_to "more", book_path(@book) %> </button><div id="link">
       </div>
     </div>
-  </div>
-
-</body>
-
-</html>
+  </div><% end %>
+</div>
