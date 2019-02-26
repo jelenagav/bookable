@@ -1,4 +1,4 @@
-class UserPolicy < ApplicationPolicy
+class BookingPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
@@ -9,19 +9,19 @@ class UserPolicy < ApplicationPolicy
     return true
   end
 
-  def show?
-    record == user
-  end
-
   def edit?
-    record == user
+    record.user == user
   end
 
   def update?
-    record == user
+    record.user == user
+  end
+
+  def show?
+    record.user == user
   end
 
   def destroy?
-    record == user
+    record.user == user
   end
 end

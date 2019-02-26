@@ -4,10 +4,11 @@ skip_before_action :authenticate_user!, only: [:home, :index]
 
 
   def index
-    @books = Book.all
+    @books = policy_scope(Book.all)
   end
 
   def show
+    authorize @book
   end
 
   def new
