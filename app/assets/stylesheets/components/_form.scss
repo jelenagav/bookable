@@ -1,7 +1,7 @@
 
 body {
-  font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #404040;
+  font: 13px/20px 'Roboto Mono', monospace;;
+  color: #596778;
   background: #596778;
 }
 
@@ -11,19 +11,13 @@ body {
   height: 550px;
   width: 400px;
   padding: 33px 25px 29px;
-  background: white;
-  border-bottom: 1px solid #c4c4c4;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  background: #596778;
 }
 
 
-
-
 .sign-up-title {
-  margin: -20px -19px 25px;
-  padding: 15px 25px;
+  margin: -12px -19px 25px;
+  padding: 20px 20px;
   line-height: 35px;
   font-size: 26px;
   font-weight: 300;
@@ -31,17 +25,21 @@ body {
   text-align: center;
   text-shadow: 0 1px rgba(255, 255, 255, 0.75);
   background: #f7f7f7;
+  border-radius: 15px 15px 0px 0px;
+  font-family: Roboto Mono, monospace;
+  color: #596778;
+
 }
 
 .sign-up-title:before {
   content: '';
+  top: -3px;
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
-  height: 8px;
+  height: 22px;
   background: #c4e17f;
-  border-radius: 5px 5px 0 0;
+  border-radius: 15px 15px 0px 0px;
   background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
@@ -131,3 +129,28 @@ input {
   border: 0;
   padding: 0;
 }
+
+.form-actions {
+  font-family: Roboto Mono, monospace;
+  color: #596778;
+}
+
+.btn {
+  font-size: 12px;
+}
+
+.login-form-1 {
+  border-radius: 15px;
+  background-color: #a8b3bf;
+}
+
+.form-control-label {
+  color: #596778;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.form-check-label {
+  margin: 8px;
+}
+
+
