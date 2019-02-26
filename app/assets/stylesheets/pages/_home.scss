@@ -7,10 +7,11 @@
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 
-body{
+body.pages.home {
+
   background: #FCE317;
   font-family: 'Roboto Mono', monospace;
-}
+
 
 h1 {
   font-size: 70px;
@@ -220,4 +221,5 @@ input {
   -webkit-transform: translate(-100%, -50%);
   -ms-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
+}
 }
