@@ -34,7 +34,7 @@ skip_before_action :authenticate_user!, only: [:home, :index]
   private
 
   def book_params
-    params.require(:book).permit(:title, :author, :description, :publication_year)
+    params.require(:book).permit(:title, :author, :description, :publication_year, :photo)
   end
 
   def find_book
