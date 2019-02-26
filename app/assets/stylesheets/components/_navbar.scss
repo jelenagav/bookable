@@ -9,11 +9,13 @@
   align-items: center;
   justify-content: space-between;
   color: black;
+  margin-top: 22px;
+  margin-left: 10px;
 }
 
 /* Logo */
 .navbar-light_bulb img {
-  height: 50px;
+  height: 70px;
 }
 
 /* User Avatar */
@@ -39,7 +41,7 @@
 /* Navbar link */
 .navbar-light_bulb-link {
   color: black;
-  font-size: 14px;
+  font-size: 18px;
 }
 .navbar-light_bulb-link:hover {
   color: #97989A;
