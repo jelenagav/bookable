@@ -1,18 +1,18 @@
-
+<h1 id="heading"> Available Books (<%= @books.length %>) </h1>
 
 <div class="cards">
   <% @books.each do |book| %>
   <div class="card">
-    <div class="product-img">
+    <div class="book-img">
       <%= cl_image_tag book.photo, height: 420, width: 262, crop: :fill %>
     </div>
-    <div class="product-info">
-      <div class="product-text">
+    <div class="book-info">
+      <div class="book-text">
         <h1> <%= book.title %> </h1>
         <h2> <%= book.author %>  </h2>
         <p> <%= book.description %> </p>
       </div>
-      <div class="product-price-btn">
+      <div class="book-btn">
        <div id="link"> <button type="button"> <%= link_to "more", book_path(book) %> </button></div>
       </div>
     </div>
