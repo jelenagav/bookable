@@ -134,12 +134,9 @@ function TyperSetup() {
   }
 }
 
-TyperSetup();
-cursor();
-Typer();
-expand();
-
 export { TyperSetup };
 export { cursor };
 export { Typer};
 export { expand };
+
+

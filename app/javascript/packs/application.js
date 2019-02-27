@@ -1,5 +1,10 @@
 import "bootstrap";
 
+// import { TyperSetup } from './isaac';
+// import { cursor }from './isaac';
+// import { Typer}from './isaac';
+// import { expand }from './isaac';
+
 function expand() {
   $(".search").toggleClass("close");
   $(".input").toggleClass("square");
