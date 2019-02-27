@@ -1,12 +1,12 @@
 <h1 id="heading"> Available Books (<%= @books.length %>) </h1>
 
-<div class="cards">
+<div class="cards-index">
   <% @books.each do |book| %>
-  <div class="card">
-    <div class="book-img">
-      <%= cl_image_tag book.photo, height: 420, width: 262, crop: :fill %>
+  <div class="card-index">
+    <div class="card-left">
+      <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" />
     </div>
-    <div class="book-info">
+    <div class="card-right">
       <div class="book-text">
         <h1> <%= book.title %> </h1>
         <h2> <%= book.author %>  </h2>
