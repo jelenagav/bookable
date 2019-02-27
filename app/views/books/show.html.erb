@@ -1,29 +1,22 @@
-
-
- <main class="container-show">
-  <div class="card-show-left"
-  <div class="img">
-   <img src="https://i2.wp.com/www.goldenpenexpress.com/wp-content/uploads/2018/09/children_bookcover.png?fit=678%2C1083&ssl=1&w=640">
- </div>
-</div>
-
-<div class="card-show-right">
-  <h1> <%= @book.title %> </h1>
-  <h2> Author: <%= @book.author %> </h2>
-  <h2> Publication date: <%= @book.publication_year %> </h2>
-  <p> <%= @book.description %> </p>
-<button type="button" class="btn btn-flat"> Borrow book </button>
-
-</div>
-</div>
-
-<%  if @existing_booking.nil? %>
-  <%= simple_form_for(@new_booking) do |f| %>
-  <%=  f.hidden_field :status %>
-  <%=  f.hidden_field :book_id %>
-  <%= f.button :submit, "request" %>
-  <% end %>
-<% else %>
-  <button disabled>Request <%= @existing_booking.status %></button>
-<% end %>
-
+<main class="container-show">
+  <div class="card-show-left">
+    <div class="img">
+      <%= cl_image_tag @book.photo, height: 420, width: 262, crop: :fill %>
+    </div>
+  </div>
+  <div class="card-show-right">
+    <h1> <%= @book.title %> </h1>
+    <h2> Author: <%= @book.author %> </h2>
+    <h2> Publication date: <%= @book.publication_year %> </h2>
+    <p> <%= @book.description %> </p>
+    <%  if @existing_booking.nil? %>
+    <%= simple_form_for(@new_booking) do |f| %>
+    <%=  f.hidden_field :status %>
+    <%=  f.hidden_field :book_id %>
+    <button class="btn btn-flat"><%= f.button :submit, "Borrow book" %></button>
+    <% end %>
+    <% else %>
+    <button class="btn btn-flat" disabled>Request <%= @existing_booking.status %></button>
+    <% end %>
+  </div>
+</main>
