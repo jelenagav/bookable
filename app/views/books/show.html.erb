@@ -13,7 +13,7 @@
     <%= simple_form_for(@new_booking) do |f| %>
     <%=  f.hidden_field :status %>
     <%=  f.hidden_field :book_id %>
-    <button class="btn btn-flat"><%= f.button :submit, "Borrow book" %></button>
+    <%= f.button :submit, "Borrow book", class: "btn btn-flat" %>
     <% end %>
     <% else %>
     <button class="btn btn-flat" disabled>Request <%= @existing_booking.status %></button>
