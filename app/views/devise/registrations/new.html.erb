@@ -3,6 +3,10 @@
     <div class="col-md-12 col-md-offset-0 login-form-1">
 
       <h1 class="sign-up-title">Sign Up</h1>
+<<<<<<< HEAD
+
+=======
+>>>>>>> 36a1916617c1fc6f5707e22499f6767a73b3a1b4
         <div class="form-group">
           <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= f.error_notification %>
@@ -23,6 +27,7 @@
             <%= f.button :submit, "Sign up" %>
           </div>
           <% end %>
+          <%= render "devise/shared/links" %>
         </div>
     </div>
   </div>

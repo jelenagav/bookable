@@ -12,6 +12,9 @@ gem 'pundit'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
 gem 'carrierwave', '~> 1.2'
+gem 'jquery-ui-rails'
+gem 'jquery-rails'
+gem 'jquery-easing-rails'
 
 
 gem 'autoprefixer-rails'
