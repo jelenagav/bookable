@@ -3,6 +3,8 @@ class UsersController < ApplicationController
 
   def show
     authorize @user
+    @bookings = @user.books.map(&:bookings).flatten
+    @book = Book.find(params[:id])
   end
 
   def destroy
