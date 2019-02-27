@@ -1,7 +1,19 @@
+<style>
+body {
+    color: white;
+}
+</style>
+
 <h1><%= @book.title %></h1>
 
+<%  if @existing_booking.nil? %>
+  <%= simple_form_for(@new_booking) do |f| %>
+  <%=  f.hidden_field :status %>
+  <%=  f.hidden_field :book_id %>
+  <%= f.button :submit, "request" %>
+  <% end %>
+<% else %>
+  <button disabled>Request <%= @existing_booking.status %></button>
+<% end %>
 
-
-
-
- <%= link_to "back", books_path %>
+<%= link_to "back", books_path %>

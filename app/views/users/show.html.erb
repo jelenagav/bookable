@@ -1,0 +1,29 @@
+<style>
+  body {
+    color: white;
+  }
+</style>
+
+<h1 id="heading"> My Books (<%= @user.books.length %>) </h1>
+
+
+<div class="cards">
+  <% @user.books.each do |book| %>
+  <div class="card">
+    <div class="book-img">
+      <%= cl_image_tag book.photo, height: 420, width: 262, crop: :fill %>
+    </div>
+    <div class="book-info">
+      <div class="book-text">
+        <h1> <%= book.title %> </h1>
+        <h2> <%= book.author %>  </h2>
+        <p> <%= book.description %> </p>
+      </div>
+      <div class="book-btn">
+       <div id="link"> <button type="button"> <%= link_to "more", book_path(book) %> </button></div>
+      </div>
+    </div>
+  </div><% end %>
+</div>
+
+
