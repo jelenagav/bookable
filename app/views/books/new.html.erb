@@ -1,20 +1,36 @@
-<div class="container login-container">
+
+<!-- multi-step form -->
+<%= simple_form_for(@book, html: { id: 'msform'}) do |f| %>
+<ul id="progressbar">
+  <li class="active">Book Information</li>
+  <li>Book Description</li>
+  <li>Upload Photo</li>
+</ul>
+<div class="background">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 login-form-1 text-right">
-      <h2 class="text-left">Add a new book</h2>
-      <div class="form-group">
-        <%= simple_form_for(@book) do |f| %>
+      <div class="col-md-12 col-md-offset-0 login-form-1 text-right">
+        <h2 class="text-left">Book Info</h2>
+        <fieldset class="active">
           <%=  f.label :author, "author" %>
           <%=  f.text_field :author %> <br>
           <%=  f.label :title, "title" %>
           <%=  f.text_field :title %> <br>
-          <%=  f.label :description, "description" %>
-          <%=  f.text_field :description %> <br>
           <%=  f.label :publication_year, "publication year" %>
           <%=  f.text_field :publication_year %> <br>
+          <input type="button" name="next" class="next action-button" value="next" />
+        </fieldset>
+
+        <fieldset>
+          <%=  f.label :description, "give us a brief summary" %>
+          <%=  f.text_field :description %> <br>
+          <input type="button" name="next" class="next action-button" value="next" />
+        </fieldset>
+
+        <fieldset>
           <%=  f.input :photo %>
-          <%=  f.input :photo_cache, as: :hidden %> <br> <br>
-          <%=  f.submit %>
+          <%=  f.input :photo_cache, as: :hidden %><br>
+          <%=  f.submit class: "book_button" %>
+        </fieldset>
         <% end %>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import "bootstrap";
+import "./addbook";
 
 function expand() {
   $(".search").toggleClass("close");
