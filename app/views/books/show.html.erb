@@ -8,15 +8,15 @@
     <h1> <%= @book.title %> </h1>
     <h2> Author: <%= @book.author %> </h2>
     <h2> Publication date: <%= @book.publication_year %> </h2>
-    <p> <%= @book.description %> </p>
+    <p><%= @book.description %></p>
     <%  if @existing_booking.nil? %>
-    <%= simple_form_for(@new_booking) do |f| %>
-    <%=  f.hidden_field :status %>
-    <%=  f.hidden_field :book_id %>
-    <%= f.button :submit, "Borrow book", class: "btn btn-flat" %>
-    <% end %>
+      <%= simple_form_for(@new_booking) do |f| %>
+        <%=  f.hidden_field :status %>
+        <%=  f.hidden_field :book_id %>
+        <%= f.button :submit, "Borrow book", class: "btn btn-flat" %>
+      <% end %>
     <% else %>
-    <button class="btn btn-flat" disabled>Request <%= @existing_booking.status %></button>
+      <button class="btn btn-flat" disabled>Request <%= @existing_booking.status %></button>
     <% end %>
   </div>
 </main>
