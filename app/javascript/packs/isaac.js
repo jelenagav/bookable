@@ -1,10 +1,4 @@
 import "bootstrap";
-import "./addbook";
-
-// import { TyperSetup } from './isaac';
-// import { cursor }from './isaac';
-// import { Typer}from './isaac';
-// import { expand }from './isaac';
 
 function expand() {
   $(".search").toggleClass("close");
@@ -140,4 +134,9 @@ function TyperSetup() {
   }
 }
 
-TyperSetup();
+export { TyperSetup };
+export { cursor };
+export { Typer};
+export { expand };
+
+

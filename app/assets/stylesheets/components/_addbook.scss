@@ -1,7 +1,7 @@
 body {
   font: 13px/20px 'Roboto', sans-serif;
   color: #596778;
-  background: #596778;
+  background-color: #596778;
 }
 
 #msform {
@@ -76,7 +76,7 @@ body {
 }
 #progressbar li {
   list-style-type: none;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-size: 9px;
   width: 33.33%;
@@ -117,7 +117,7 @@ body {
 }
 
 #progressbar li.active:before,  #progressbar li.active:after{
-  background: #FCE317;
+  background: #a8b3bf;
   color: white;
   font-family: 'Roboto', sans-serif;
   transition-timing-function: ease-in-out;
@@ -127,7 +127,7 @@ body {
 
 
 .form-control-file {
-  background-color: #FCE317;
+  background-color: white;
   color: black;
 }
 
@@ -138,5 +138,6 @@ body {
 }
 
 .book_button {
-  background-color: #FCE317;
+  background-color: white;
 }
+

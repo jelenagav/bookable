@@ -8,8 +8,8 @@
 
 user = User.create!(email: "test2@gmail.com", password:"o3if4jr")
 
-Book.create!(title: "jeiojeoif", user: user, author: "cdcjdcd", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-Book.create!(title: "efegg", user: user, author: "fcrfr", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-Book.create!(title: "jeideffeff", user: user, author: "frffrg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+Book.create!(title: "jeiojeoif", remote_photo_url: "https://i.imgur.com/qcXKG4Q.jpg", user: user, author: "cdcjdcd", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+Book.create!(title: "efegg", user: user, author: "fcrfr", remote_photo_url: "https://hpmedia.bloomsbury.com/rep/s/9781408855904_309575.jpeg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+Book.create!(title: "jeideffeff", user: user, author: "frffrg", remote_photo_url: "https://images.gr-assets.com/books/1515589515l/186074.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 
 
