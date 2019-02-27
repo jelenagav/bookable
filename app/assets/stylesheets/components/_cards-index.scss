@@ -49,7 +49,8 @@
 }
 
 .book-text h1 {
-  margin: 20px;
+  margin-top: 0px;
+  margin-left: 30px;
   padding-top: 30px;
   font-size: 34px;
   color: #474747;
@@ -57,23 +58,25 @@
 
 .book-text h1,
 .book-btn p {
-  font-family: 'Bentham', serif;
+font-family: 'Roboto', sans-serif;
 }
 
 .book-text h2 {
   margin: 20px;
+  margin-left: 30px;
   font-size: 13px;
-  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #d2d2d2;
   letter-spacing: 0.2em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .book-text p {
   height: 150px;
   margin: 20px;
-  font-family: 'Playfair Display', serif;
+  margin-left: 30px;
+  font-family: 'Roboto', sans-serif;
   color: #8d8d8d;
   line-height: 1.7em;
   font-size: 15px;
@@ -124,9 +127,9 @@
   outline: none;
 }
 
-a {
+.card a {
   color: white;
 }
 .book-btn button:hover {
-  background-color: #d3bd06;
+  background-color: #4f4c4c;
 }
