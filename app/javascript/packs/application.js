@@ -1,4 +1,5 @@
 import "bootstrap";
+import "./addbook";
 
 // import { TyperSetup } from './isaac';
 // import { cursor }from './isaac';

@@ -1,0 +1,39 @@
+
+.footer {
+    // background-image: url(https://images.unsplash.com/photo-1495639004258-10f5563eb702?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
+    background: #FCE317;
+    // background: linear-gradient(245deg,#18f0b8,#E8EAEB,#FCFF00);
+    background-size: 600% 600%;
+    min-height: 320px;
+    padding: 5% 5% 50px;
+    position: relative;
+    background-size: cover;
+}
+
+// .footer dl dt a {
+//     display: block;
+//     width: 30px;
+//     height: 30px;
+//     background-image: url(images/icons.svg);
+//     text-indent: 99px;
+//     overflow: hidden;
+// }
+
+.fab {
+  font-size: 30px;
+}
+
+#icons {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 550px;
+  margin-right: auto;
+  font-color: black;
+}
+
+p {
+  text-align: center;
+  color: black;
+}
