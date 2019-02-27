@@ -2,7 +2,7 @@ var current_fs, next_fs, previous_fs;
 var left, opacity, scale;
 var animating;
 
-const form = document.getElementById("msform")
+const msform = document.getElementById("msform")
 
 if(msform) {
   const nextbuttons = msform.querySelectorAll(".next")
