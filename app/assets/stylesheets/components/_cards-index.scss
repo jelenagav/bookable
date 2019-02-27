@@ -1,69 +1,70 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-.cards {
+.cards-index {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(544px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(404px, 1fr));
   justify-items: center;
   grid-gap: 16px;
 }
 
-
-.card {
-  height: 420px;
-  width: 524px;
+// height: 420, width: 262,
+.card-index {
+  height: 292px;
+  width: 384px;
   margin: 20px;
-  // margin-left: auto;
-  // margin-right: auto;
   border-radius: 7px 7px 7px 7px;
-  /* VIA CSS MATIC https://goo.gl/cIbnS */
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 
+.card-index a {
+  color: white;
+}
 #heading {
   margin-left: 79px;
   font-family: ‘Roboto Mono’, monospace;
 }
-.book-img {
+
+.card-left {
   float: left;
-  height: 420px;
-  width: 262px;
+  height: 100%;
+  width: 50%;
 }
 
-.book-img img {
+.card-left img {
   border-radius: 7px 0 0 7px;
+  height:100%;
+  width:100%;
+  border:10px solid white;
 }
 
-.book-info {
+.card-right {
   float: left;
-  height: 420px;
-  width: 262px;
+  height: 100%;
+  width: 50%;
   border-radius: 0 7px 10px 7px;
   background-color: #ffffff;
 }
 
 .book-text {
-  height: 300px;
-  width: 262px;
+  height: 75%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .book-text h1 {
   margin-top: 0px;
-  margin-left: 30px;
+  margin-left: 10px;
   padding-top: 30px;
-  font-size: 34px;
+  padding-right: 10px;
+  font-size: 23px;
   color: #474747;
-}
-
-.book-text h1,
-.book-btn p {
-font-family: 'Roboto', sans-serif;
 }
 
 .book-text h2 {
   margin: 20px;
-  margin-left: 30px;
+  margin-left: 10px;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
@@ -75,20 +76,22 @@ font-family: 'Roboto', sans-serif;
 .book-text p {
   height: 150px;
   margin: 20px;
-  margin-left: 30px;
+  margin-left: 10px;
   font-family: 'Roboto', sans-serif;
   color: #8d8d8d;
   line-height: 1.7em;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: lighter;
   overflow: hidden;
 }
 
 .book-btn {
-  height: 103px;
-  width: 262px;
+  height: 83px;
+  width: 100%;
   margin-top: 17px;
   position: relative;
+  margin-left:0px;
+  margin-right:0px;
 }
 
 .book-btn p {
@@ -97,29 +100,31 @@ font-family: 'Roboto', sans-serif;
   top: -13px;
   height: 50px;
   font-family: 'Trocchi', serif;
-  margin: 20px;
-  font-size: 28px;
+  margin: 10px;
   font-weight: lighter;
   color: white;
 }
 
-
+.book-btn p {
+font-family: 'Roboto', sans-serif;
+}
 
 .book-btn button {
   bottom:20px;
   position: absolute;
-  float: right;
+  bottom: 39px;
+  right: 62px;
   display: inline-block;
-  height: 50px;
-  width: 176px;
+  height: 25px;
+  width: 80px;
   letter-spacing: 0.3em;
-  margin: 30px;
   box-sizing: border-box;
   border: transparent;
   border-radius: 60px;
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 500;
+  font-color: white;
   text-transform: uppercase;
   color: white;
   background-color: #808080;
@@ -127,9 +132,6 @@ font-family: 'Roboto', sans-serif;
   outline: none;
 }
 
-.card a {
-  color: white;
-}
 .book-btn button:hover {
   background-color: #4f4c4c;
 }
