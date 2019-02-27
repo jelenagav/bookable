@@ -7,6 +7,8 @@ skip_before_action :authenticate_user!, only: [:home, :index]
   end
 
   def show
+    @new_booking = Booking.new(book: @book, status: 'pending')
+    @existing_booking = current_user.bookings.where(book: @book).last
     authorize @book
   end
 
