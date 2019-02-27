@@ -1,0 +1,78 @@
+.container-show{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding: 40px;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  vertical-align: center;
+  position:relative;
+}
+
+
+.card-show-left img {
+  height: 100%;
+  width: 360px;
+  object-fit: cover;
+  padding: 20px;
+  padding-right: 30px;
+}
+
+.card-show-right {
+  padding: 20px;
+}
+.card-show-right h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.card-show-right h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: italic;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-show-right h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-show-right p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.btn-flat {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 28px;
+  right: 60px;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #808080;
+  transition: background 0.3s ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+.book-flat button:hover {
+  background-color: #4f4c4c;
+}
+

@@ -1,7 +1,19 @@
-<h1><%= @book.title %></h1>
+
+ <main class="container-show">
+  <div class="card-show-left"
+  <div class="img">
+   <img src="https://i2.wp.com/www.goldenpenexpress.com/wp-content/uploads/2018/09/children_bookcover.png?fit=678%2C1083&ssl=1&w=640">
+ </div>
+</div>
+
+<div class="card-show-right">
+  <h1> <%= @book.title %> </h1>
+  <h2> Author: <%= @book.author %> </h2>
+  <h2> Publication date: <%= @book.publication_year %> </h2>
+  <p> <%= @book.description %> </p>
+<button type="button" class="btn btn-flat"> Borrow book </button>
+
+</div>
+</div>
 
 
-
-
-
- <%= link_to "back", books_path %>
