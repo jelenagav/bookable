@@ -15,7 +15,6 @@ gem 'carrierwave', '~> 1.2'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'jquery-easing-rails'
-gem 'cloudinary', '~> 1.9.1'
 
 
 gem 'pg_search'
