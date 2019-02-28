@@ -52,6 +52,7 @@ body {
 }
 #msform .action-button:hover, #msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 0px;
+  background: #D6C00E;
 }
 /*headings*/
 .fs-title {
@@ -92,7 +93,7 @@ body {
   line-height: 20px;
   display: block;
   font-size: 10px;
-  color: #333;
+  color: #FCE317;
   background: white;
   border-radius: 3px;
   margin: 0 auto 5px auto;
@@ -117,8 +118,8 @@ body {
 }
 
 #progressbar li.active:before,  #progressbar li.active:after{
-  background: #a8b3bf;
-  color: white;
+  background: #FCE317;
+  color: black;
   font-family: 'Roboto', sans-serif;
   transition-timing-function: ease-in-out;
   transition: .5s;
@@ -137,7 +138,15 @@ body {
   color: black;
 }
 
-.book_button {
-  background-color: white;
+#msform .book_button {
+  background: #FCE317;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+#msform .book_button:hover {
+  background: #D6C00E;
+}
+
 
