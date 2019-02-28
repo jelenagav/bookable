@@ -18,15 +18,16 @@
       <!-- Avatar with dropdown menu -->
       <div class="navbar-light_bulb-item">
         <div class="dropdown">
-          <%= image_tag "Lola_4.jpg", class: "avatar dropdown-toggle", id: "navbar-light_bulb-menu", "data-toggle" => "dropdown" %>
+          <%= cl_image_tag current_user.photo,
+        width: 150, height: 150, crop: :thumb, gravity: :face , class: "avatar dropdown-toggle", id: "navbar-light_bulb-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-light_bulb-dropdown-menu">
             <li>
-              <%= link_to user_path(current_user) do %>
+              <%= link_to edit_user_registration_path(current_user) do %>
                 <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
               <% end %>
             </li>
             <li>
-              <%= link_to "#" do %>
+              <%= link_to user_path(current_user) do %>
                 <i class="fa fa-cog"></i>  <%= t(".settings", default: "Settings") %>
               <% end %>
             </li>
@@ -52,9 +53,9 @@
     <div class="dropdown">
       <i style="font-size: 25px;" class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-light_bulb-dropdown-menu">
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <!-- <li><a href="#">Other one</a></li> -->
+        <li><a href="#">Add Book</a></li>
+        <li><a href="#">Listing</a></li>
+        <li><a href="#">Search</a></li>
       </ul>
     </div>
   </div>
