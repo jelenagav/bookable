@@ -1,4 +1,10 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Edit <%= resource_name.to_s.humanize %></h2> <br>
+
+<%= simple_form_for(@user) do |f| %>
+ <%= f.input :photo, label: 'Upload Photo' %>
+ <%= f.input :photo_cache, as: :hidden %>
+ <%= f.button :submit, "Upload", class: "btn btn-success" %>
+ <% end %> <br>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
@@ -21,12 +27,10 @@
                 hint: "we need your current password to confirm your changes",
                 required: false,
                 input_html: { autocomplete: "current-password" } %>
-    <%= f.input :photo %>
-    <%= f.input :photo_cache, as: :hidden %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Update" %>
+    <%= f.button :submit, "Update", class: "btn btn-success" %>
   </div>
 <% end %>
 
