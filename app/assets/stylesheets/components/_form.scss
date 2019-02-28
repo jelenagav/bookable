@@ -1,16 +1,16 @@
 
 body {
-  color: #596778;
-  background: #596778;
+  color: lightgrey;
+  background: lightgrey;
 }
 
 .container.login-container {
   position: relative;
   margin: 20px auto;
   height: 550px;
-  width: 400px;
+  width: 450px;
   padding: 33px 25px 29px;
-  background: #FCE317;
+  background: lightgrey;
 }
 
 
@@ -23,10 +23,15 @@ body {
   color: #aaa;
   text-align: center;
   text-shadow: 0 1px rgba(255, 255, 255, 0.75);
-  background: #f7f7f7;
+  background: white;
   border-radius: 15px 15px 0px 0px;
   font-family: Roboto Mono, monospace;
   color: #596778;
+  border-style: solid;
+  border-width: thin;
+  border-right: 0;
+  border-left: 0;
+  border-color: lightgray
 
 }
 
@@ -140,7 +145,7 @@ input {
 
 .login-form-1 {
   border-radius: 15px;
-  background-color: #a8b3bf;
+  background-color: white;
 }
 
 .form-control-label {

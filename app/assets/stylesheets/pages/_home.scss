@@ -6,13 +6,12 @@
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 body {
-  background: #f9f9f9;
-}
+  background: lightgrey;
+
 
 
 
 body.pages.home {
-
 
 h1 {
   font-size: 70px;
@@ -23,6 +22,9 @@ h1 {
 
 }
 
+.contactus {
+  color: black;
+}
 
 .white-font {
   color: white;
