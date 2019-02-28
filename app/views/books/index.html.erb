@@ -4,7 +4,7 @@
   <% @books.each do |book| %>
   <div class="card-index">
     <div class="card-left">
-      <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" />
+     <% if book.photo.present? %> <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" /> <% end %>
     </div>
     <div class="card-right">
       <div class="book-text">
