@@ -4,13 +4,14 @@
   <% @books.each do |book| %>
   <div class="card-index">
     <div class="card-left">
-      <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" />
+     <% if book.photo.present? %> <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" /> <% end %>
     </div>
     <div class="card-right">
       <div class="book-text">
         <h1> <%= book.title %> </h1>
         <h2> <%= book.author %>  </h2>
-        <p> <%= book.description %> </p>
+        <p>
+         <%= book.description.truncate(140, separator: /\s/) %> </p>
       </div>
       <div class="book-btn">
        <div id="link"> <button type="button"> <%= link_to "more", book_path(book) %> </button></div>
