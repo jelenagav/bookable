@@ -76,3 +76,56 @@
   background-color: #4f4c4c;
 }
 
+.card-index {
+  position: relative;
+}
+
+.btn-accept {
+  position: absolute;
+  top: 8px;
+  left: -150px;
+  background-color: #5CC593;
+  font-color: white;
+   display: inline-block;
+  height: 25px;
+  width: 80px;
+  letter-spacing: 0.3em;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  font-color: white;
+  text-transform: uppercase;
+  color: white;
+  background-color: #3CD80E;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.btn-reject {
+  position: absolute;
+  top: -54px;
+  left: -32px;
+  font-color: white;
+  display: inline-block;
+  height: 25px;
+  width: 80px;
+  letter-spacing: 0.3em;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  font-color: white;
+  text-transform: uppercase;
+  color: white;
+  background-color: #F1476A;
+  cursor: pointer;
+  outline: none;
+}
+
+
