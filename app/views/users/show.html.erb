@@ -41,16 +41,20 @@
           <%= f.button :submit, "Accept", class: "btn btn-flat" %>
         <% end %></div>
         <div class="my_button_right"> <%= simple_form_for(booking) do |f| %>
-          <%= f.hidden_field :status, :value => "Reject" %>
+          <%= f.hidden_field :status, :value => nil %>
           <%= f.button :submit, "Reject", class: "btn btn-flat" %>
-        <% end %></div>
+        <% end %>
+        </div>
       </div>
     </div>
   </div>
   <% end %>
 </div>
-<h1 id="heading">Borrowed Books (<%= @bookings.length %>)</h1>
+<h1 id="heading">Borrowed Books (
+  <%= @bookings.select { |booking| booking.status == "Accept" }.length%>)
+</h1>
 <% @bookings.each do |booked| %>
+<% if booked.status == "Accept" %>
 <% book = booked.book %>
 <div class="cards-index">
   <div class="card-index">
@@ -70,5 +74,6 @@
       </div>
     </div>
   </div>
+  <% end %>
   <% end %>
 </div>
