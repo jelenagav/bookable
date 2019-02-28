@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 2019_02_28_141508) do
 
   # These are extensions that must be enabled in order to support this database
@@ -55,11 +54,10 @@ ActiveRecord::Schema.define(version: 2019_02_28_141508) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "photo"
     t.string "address"
     t.float "latitude"
     t.float "longitude"
-
+    t.string "photo"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
