@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-
+  mount_uploader :photo, PhotoUploader
   has_many :books
   has_many :bookings
   devise :database_authenticatable, :registerable,

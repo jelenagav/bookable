@@ -7,6 +7,13 @@
   grid-gap: 16px;
 }
 
+.overflow ellipsis {
+  width: 10em;
+  outline: 1px solid #000;
+  margin: 0 0 2em 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
 // height: 420, width: 262,
 .card-index {
   height: 292px;
@@ -83,6 +90,7 @@
   font-size: 13px;
   font-weight: lighter;
   overflow: hidden;
+  text-align:left;
 }
 
 .book-btn {
@@ -135,3 +143,5 @@ font-family: 'Roboto', sans-serif;
 .book-btn button:hover {
   background-color: #4f4c4c;
 }
+
+

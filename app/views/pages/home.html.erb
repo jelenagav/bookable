@@ -9,10 +9,20 @@
   <span class="cursor" data-owner="main"></span>
 </h1>
 
-<form id="content">
+<!-- <form id="content">
   <input type="text" name="input" class="input">
   <button type="reset" class="search"></button>
-</form>
+</form> -->
+
+
+<%= form_tag books_path, method: :get, class: "content" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "input",
+    placeholder: ""
+  %>
+  <button type="reset" class="search"></button>
+<% end %>
 <!-- <div class="wrap">
    <div class="search">
       <input type="text" class="searchTerm" placeholder="What book do you want to borrow?">
