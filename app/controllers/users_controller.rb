@@ -12,6 +12,10 @@ class UsersController < ApplicationController
 
   private
 
+  def user_params
+    params.require(:user).permit(:photo)
+  end
+
   def find_user
     @user = User.find(params[:id])
   end

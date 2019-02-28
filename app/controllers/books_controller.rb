@@ -3,7 +3,12 @@ before_action :find_book, only: [:show, :destroy]
 skip_before_action :authenticate_user!, only: [:home, :index]
 
   def index
-    @books = policy_scope(Book.all)
+    if params[:query].present?
+      sql_query = "title ILIKE :query OR author ILIKE :query"
+      @books = policy_scope(Book.where(sql_query, query: "%#{params[:query]}%"))
+    else
+      @books = policy_scope(Book.all)
+    end
   end
 
   def show

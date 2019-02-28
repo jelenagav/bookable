@@ -15,8 +15,11 @@ gem 'carrierwave', '~> 1.2'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'jquery-easing-rails'
+gem 'cloudinary', '~> 1.9.1'
 
 
+gem 'pg_search'
+gem 'searchkick', '~> 3.0'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass', '~> 5.5.0'
