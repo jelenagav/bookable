@@ -15,7 +15,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'jquery-easing-rails'
-
+gem "geocoder"
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
