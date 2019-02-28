@@ -3,6 +3,13 @@ body {
 color: white;
 }
 </style>
+  <% if @user.photo.present? %>
+  <%= cl_image_tag @user.photo, height: 300, width: 400, crop: :fill %> <% end %>
+  <%= simple_form_for(@user) do |f| %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
+  <%= f.submit "upload" %>
+<% end %>
 <h1 id="heading"> My Books (<%= @user.books.length %>) </h1>
 <div class="cards">
   <% @user.books.each do |book| %>
