@@ -6,6 +6,11 @@ skip_before_action :authenticate_user!, only: [:home, :index]
     if params[:query].present?
       sql_query = "title ILIKE :query OR author ILIKE :query"
       @books = policy_scope(Book.where(sql_query, query: "%#{params[:query]}%"))
+
+    elsif params[:near].present?
+
+      near_users = User.near(current_user) - [current_user]
+      @books = policy_scope(Book.all).where(user: near_users)
     else
       @books = policy_scope(Book.all)
     end
