@@ -17,7 +17,6 @@ gem 'jquery-rails'
 gem 'jquery-easing-rails'
 gem 'cloudinary', '~> 1.9.1'
 
-
 gem 'pg_search'
 gem 'searchkick', '~> 3.0'
 gem 'autoprefixer-rails'
