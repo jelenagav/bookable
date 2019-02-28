@@ -10,11 +10,11 @@ class BookingPolicy < ApplicationPolicy
   end
 
   def edit?
-    record.user == user
+    return true
   end
 
   def update?
-    record.user == user
+    return true
   end
 
   def show?
