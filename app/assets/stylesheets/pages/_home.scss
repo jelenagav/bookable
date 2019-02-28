@@ -120,7 +120,7 @@ h1 {
 }
 
 
-#content {
+.content {
   position: absolute;
   height: 100px;
   width: 20px;
@@ -131,7 +131,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-#content.on {
+.content.on {
   -webkit-animation-name: in-out;
   animation-name: in-out;
   -webkit-animation-duration: 0.7s;

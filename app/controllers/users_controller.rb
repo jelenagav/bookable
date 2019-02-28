@@ -4,15 +4,17 @@ class UsersController < ApplicationController
   def show
     authorize @user
     @bookings = @user.books.map(&:bookings).flatten
-
-    # user_books = Book.where(user_id: current_user.id)
-    # @user_bookings = user_books.map { |x| x.bookings }
+    @booked_booking = @user.bookings_of_owned_books.where(status: "pending")
   end
 
   def destroy
   end
 
   private
+
+  def user_params
+    params.require(:user).permit(:photo)
+  end
 
   def find_user
     @user = User.find(params[:id])
