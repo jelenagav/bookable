@@ -1,24 +1,16 @@
 
 .footer {
-    // background-image: url(https://images.unsplash.com/photo-1495639004258-10f5563eb702?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
-    // background-image: url(https://c2.staticflickr.com/4/3646/3438554102_4b432448c5_b.jpg%22);
-    background: #FCE317;
-    // background: linear-gradient(245deg,#18f0b8,#E8EAEB,#FCFF00);
-    background-size: 600% 600%;
-    min-height: 320px;
-    padding: 5% 5% 50px;
-    position: relative;
-    background-size: cover;
+  background: #FCE317;
+  padding: 5% 5% 50px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-// .footer dl dt a {
-//     display: block;
-//     width: 30px;
-//     height: 30px;
-//     background-image: url(images/icons.svg);
-//     text-indent: 99px;
-//     overflow: hidden;
-// }
 
 .fab {
   font-size: 25px;
@@ -31,7 +23,6 @@
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
 
 }
 
