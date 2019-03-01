@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :users do
     resources :books, except: [:create]
   end
-  resources :books, only: [:index, :show, :create] # /books
+  resources :books, only: [:index, :show, :create, :destroy] # /books
   resources :bookings
 end

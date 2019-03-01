@@ -23,6 +23,13 @@
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.card-index:hover {
+  .btn-circle {
+    display: inline;
+  }
 }
 
 .card-index a {
@@ -50,7 +57,7 @@
   float: left;
   height: 100%;
   width: 50%;
-  border-radius: 0 7px 10px 7px;
+  border-radius: 0 7px 10px 0px;
   background-color: #ffffff;
 }
 
