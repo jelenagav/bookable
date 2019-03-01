@@ -1,6 +1,7 @@
+<div class="container">
 <div class="dashboard">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-12">
       <ul class="dashboard-tabs">
         <li class="active">
           <a href="#profile" class="btn" aria-controls="profiles" role="tab" data-toggle="tab">
@@ -44,17 +45,18 @@
             <div class="content">
               <div class="row">
                 <!-- <img class="col-sm-3 col-sm-offset-1" src="<%=@user.photo%>"> -->
+                <div class="col-sm-3">
+                  <%= cl_image_tag(@user.photo, width: 300, height: 300, crop: :fill ) %>
+                </div>
 
-                <%= cl_image_tag(@user.photo, class: "col-sm-3 col-sm-offset-1" ) %>
-
-                <div class="col-sm-4">
-                  <h4>Hello, <%= @user.email %></h4>
-                  <h4>Welcome to your page!</h4>
+                <div class="col-sm-4 col-sm-offset-2" style="padding: 10px">
+                  <h4 style="font-size: 50px;"><%= @user.email %> </h4>
+                  <h4 style="font-size: 50px;">Welcome!</h4>
                 </div>
                 <div class="col-sm-3">
 
                   <%= link_to edit_user_registration_path(current_user) do %>
-                  <button class="btn btn-lg btn pull-right"><span class="glyphicon glyphicon-edit"></span></button>
+                  <button class="btn btn-lg btn pull-right" id="btn-edit"><span class="glyphicon glyphicon-edit" style="margin: 3px"></span></button>
                 <% end  %>
                 </div>
               </div>
@@ -153,16 +155,16 @@
         </div>
         <div role="tabpanel" class="tab-pane help-pane" id="help">
           <!-- Begin Help -->
+            <div id="container-title">
           <div class="jumbotron jumbotron-sm">
-            <div class="container">
               <div class="row">
                 <div class="col-sm-12 col-lg-12">
                   <h1 class="contactus">Contact us </h1>
                 </div>
-              </div>
             </div>
+              </div>
           </div>
-          <div class="container">
+          <div id="container-contactus">
             <div class="row">
               <div class="col-md-8">
                 <div class="well well-sm">
@@ -206,7 +208,7 @@
                   </form>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <form>
                   <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
                   <address>
@@ -228,6 +230,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- just trying -->
