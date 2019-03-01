@@ -41,6 +41,9 @@ skip_before_action :authenticate_user!, only: [:home, :index]
   end
 
   def destroy
+    authorize @book
+    @book.destroy
+    redirect_to user_path(current_user)
   end
 
   private

@@ -66,6 +66,11 @@
               <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" />
             </div>
             <div class="card-right">
+              <div class="btn btn-warning btn-circle">
+                <%= link_to book_path(book), method: :delete, data: { confirm: "Are you sure?" } do %>
+                <i class="glyphicon glyphicon-remove"></i>
+                  <% end %>
+                </div>
               <div class="book-text">
                 <h1> <%= book.title %> </h1>
                 <h2> <%= book.author %>  </h2>
