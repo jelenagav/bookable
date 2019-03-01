@@ -8,3 +8,43 @@
 @import "footer";
 @import "card-show";
 
+.geo-buttons {
+  padding: 15px;
+  margin-top: 18px;
+}
+
+#space {
+  display: flex;
+  justify-content: space-between;
+}
+
+#geo-links {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#geo-space {
+  justify-content: space-between;
+}
+
+.geo-buttons-style {
+  cursor: pointer;
+  color: white;
+    background-color: #96a2ad;
+    border-color: #007bff;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+ .geo-buttons-style:hover {
+  background-color: #6c757d;
+}
+
+
+
+
