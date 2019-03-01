@@ -91,11 +91,16 @@
   position: relative;
 }
 
+#pending-btn {
+  position: absolute;
+  top: 270px;
+  left: 180px;
+}
 
 .btn-accept {
   position: absolute;
-  top: 8px;
-  left: -150px;
+  bottom: 30px;
+  right: -170px;
   background-color: #5CC593;
   color: #474747;
   display: inline-block;
@@ -119,7 +124,7 @@
 
 .btn-reject {
   position: absolute;
-  top: -54px;
+  top: -35px;
   left: -32px;
   font-color: white;
   display: inline-block;
