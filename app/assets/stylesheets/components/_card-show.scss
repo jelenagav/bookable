@@ -9,6 +9,7 @@
   display: flex;
   vertical-align: center;
   position:relative;
+  border: 1px solid #dbdbdb;
 }
 
 
@@ -67,26 +68,31 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #808080;
+  background: #FCE218;
   transition: background 0.3s ease;
   font-family: 'Raleway', sans-serif;
 }
 
-.book-flat button:hover {
-  background-color: #4f4c4c;
+.btn btn-flat a {
+  text-decoration: none;
+  color: #474747;
+}
+.btn btn-flat button:hover {
+  background-color: #e2ca14;
 }
 
 .card-index {
   position: relative;
 }
 
+
 .btn-accept {
   position: absolute;
   top: 8px;
   left: -150px;
   background-color: #5CC593;
-  font-color: white;
-   display: inline-block;
+  color: #474747;
+  display: inline-block;
   height: 25px;
   width: 80px;
   letter-spacing: 0.3em;
