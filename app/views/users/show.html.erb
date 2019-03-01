@@ -67,13 +67,13 @@
         <h1 id="heading"> My Books (<%= @user.books.length %>) </h1>
         <div class="cards-index">
           <% @user.books.each do |book| %>
-          <div class="card-index">
+          <div class="card-index" data-book-id="<%= book.id %>">
             <div class="card-left">
               <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" />
             </div>
             <div class="card-right">
               <div class="btn btn-warning btn-circle">
-                <%= link_to book_path(book), method: :delete, data: { confirm: "Are you sure?" } do %>
+                <%= link_to book_path(book), method: :delete, remote: true, data: { confirm: "Are you sure?" } do %>
                 <i class="glyphicon glyphicon-remove"></i>
                   <% end %>
                 </div>
