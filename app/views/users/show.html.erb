@@ -126,8 +126,7 @@
           </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="settings">
-          <h1 id="heading">Borrowed Books (
-            <%= @bookings.select { |booking| booking.status == "Accept" }.length%>)
+          <h1 id="heading">Borrowed Books (<%= @bookings.select { |booking| booking.status == "Accept" }.length%>)
           </h1>
                     <div class="cards-index">
 
