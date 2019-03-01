@@ -7,7 +7,9 @@
   <div class="card-show-right">
     <h1> <%= @book.title %> </h1>
     <h2> Author: <%= @book.author %> </h2>
-    <h2> Publication date: <%= @book.publication_year %> </h2>
+    <h2> Publication year: <%= @book.publication_year %> </h2>
+    <br />
+    <br />
     <p><%= @book.description %></p>
     <%  if @existing_booking.nil? || @existing_booking.status == nil %>
       <%= simple_form_for(@new_booking) do |f| %>
