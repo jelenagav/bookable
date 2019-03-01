@@ -9,10 +9,11 @@ Book.destroy_all
 User.destroy_all
 
 
-user = User.create!(email: "test2@gmail.com", password:"o3if4jr")
+# user = User.create!(email: "test2@gmail.com", password:"o3if4jr", address:"amsterdam")
 
-Book.create!(title: "jeiojeoif", remote_photo_url: "https://i.imgur.com/qcXKG4Q.jpg", user: user, author: "cdcjdcd", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-Book.create!(title: "efegg", user: user, author: "fcrfr", remote_photo_url: "https://hpmedia.bloomsbury.com/rep/s/9781408855904_309575.jpeg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-Book.create!(title: "jeideffeff", user: user, author: "frffrg", remote_photo_url: "https://images.gr-assets.com/books/1515589515l/186074.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+# Book.create!(title: "Mrs. Halloway", remote_photo_url: "https://prodimage.images-bn.com/pimages/9780156628709_p0_v7_s550x406.jpg", user: user, author: "cdcjdcd", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+# Book.create!(title: "efegg", user: user, author: "fcrfr", remote_photo_url: "https://hpmedia.bloomsbury.com/rep/s/9781408855904_309575.jpeg", user: user, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+# Book.create!(title: "jeideffeff", user: user, author: "frffrg", remote_photo_url: "https://images.gr-assets.com/books/1515589515l/186074.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+
 
 
