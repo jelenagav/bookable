@@ -1,25 +1,23 @@
-<h1 id="heading"> Available Books (<%= @books.length %>) </h1>
+<div id="space">
+    <h1 id="heading"> Available Books (<%= @books.length %>) </h1>
+    <div id="geo-links">
+    <%= form_tag books_path, class: "geo-buttons", method: :get do %>
+      <%= hidden_field_tag :near,
+        current_user.address,
+        class: "form-control",
+        placeholder: "Find a movie"
+      %>
+      <%= button_tag 'Near  me', type: 'near', class: "geo-buttons-style" %>
+    <% end %>
 
-<%= form_tag books_path, method: :get do %>
-  <%= hidden_field_tag :near,
-    current_user.address,
-    class: "form-control",
-    placeholder: "Find a movie"
-  %>
-  <%= button_tag 'Near  me', type: 'near' %>
-
-  <%#= button_to 'Near me', {controller: "books", action: "index", value: :near} %>
-<% end %>
-
-<%= form_tag books_path, method: :get do %>
-  <%= button_tag 'All' %>
-
-  <% end %>
+    <%= form_tag books_path, class: "geo-buttons", method: :get do %>
+      <%= button_tag 'All', class: "geo-buttons-style" %>
+      <% end %>
+    </div>
+</div>
   <div class="container">
     <div class="block_1"></div> <hr />
     </div>
-
-
 <div class="cards-index">
   <% @books.each do |book| %>
   <div class="card-index">
@@ -34,7 +32,7 @@
          <%= book.description.truncate(120, separator: /\s/) %> </p>
       </div>
       <div class="book-btn">
-       <div id="link"> <button type="button"> <%= link_to "more", book_path(book) %> </button></div>
+       <div id="link"> <button type="button" id="coloring-button-cards"> <%= link_to "more", book_path(book) %> </button></div>
       </div>
     </div>
   </div><% end %>

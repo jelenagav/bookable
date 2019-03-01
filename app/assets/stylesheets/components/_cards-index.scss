@@ -36,6 +36,21 @@
   text-decoration: none;
 }
 
+.card-index:hover {
+  .btn-circle {
+    display: inline;
+  }
+}
+
+.card-index a {
+  color: #333333;
+}
+
+#heading {
+  margin-left: 20px;
+  font-family: ‘Roboto Mono’, monospace;
+}
+
 .card-left {
   float: left;
   height: 100%;
@@ -53,7 +68,7 @@
   float: left;
   height: 100%;
   width: 50%;
-  border-radius: 3px;
+  border-radius: 0 3px 3px 0px;
   background-color: #ffffff;
 }
 
@@ -113,13 +128,14 @@
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
   font-weight: 500;
-  background-color: #FCE218;
+  color: #333333;
+  background-color: #FCE317;
   cursor: pointer;
   outline: none;
 }
 
 .book-btn button:hover {
-  background-color: #e2ca14;
+  background-color: #D6C00E;
 }
 
 
