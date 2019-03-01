@@ -43,13 +43,19 @@
             </div>
             <div class="content">
               <div class="row">
-                <img class="col-sm-3 col-sm-offset-1" src="http://lorempixel.com/420/420/city">
+                <!-- <img class="col-sm-3 col-sm-offset-1" src="<%=@user.photo%>"> -->
+
+                <%= cl_image_tag(@user.photo, class: "col-sm-3 col-sm-offset-1" ) %>
+
                 <div class="col-sm-4">
                   <h4>Hello, <%= @user.email %></h4>
                   <h4>Welcome to your page!</h4>
                 </div>
                 <div class="col-sm-3">
+
+                  <%= link_to edit_user_registration_path(current_user) do %>
                   <button class="btn btn-lg btn pull-right"><span class="glyphicon glyphicon-edit"></span></button>
+                <% end  %>
                 </div>
               </div>
 
