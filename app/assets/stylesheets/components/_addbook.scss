@@ -12,23 +12,21 @@ body {
 }
 
 #msform fieldset {
-  // background: #596778;;
   border: 0 none;
   border-radius: 3px;
-  // box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding: 20px 30px;
   box-sizing: border-box;
-  // width: 80%;
-  // margin: 0 10%;
   font-family: 'Roboto', sans-serif;
 }
+
 /*Hide all except first fieldset*/
 #msform fieldset:not(.active) {
   display: none;
 }
 
 /*inputs*/
-#msform input, #msform textarea {
+#msform input,
+#msform textarea {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -39,6 +37,7 @@ body {
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
 }
+
 /*buttons*/
 #msform .action-button {
   width: 100px;
@@ -50,10 +49,13 @@ body {
   padding: 10px 5px;
   margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
+
+#msform .action-button:hover,
+#msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 0px;
   background: #D6C00E;
 }
+
 /*headings*/
 .fs-title {
   font-size: 15px;
@@ -62,6 +64,7 @@ body {
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
 }
+
 .fs-subtitle {
   font-weight: normal;
   font-size: 13px;
@@ -69,12 +72,14 @@ body {
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
 }
+
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
   /*CSS counters to number the steps*/
   counter-reset: step;
 }
+
 #progressbar li {
   list-style-type: none;
   color: black;
@@ -86,6 +91,7 @@ body {
   right: 20px;
   font-family: 'Roboto', sans-serif;
 }
+
 #progressbar li:before {
   content: counter(step);
   counter-increment: step;
@@ -99,6 +105,7 @@ body {
   margin: 0 auto 5px auto;
   font-family: 'Roboto', sans-serif;
 }
+
 /*progressbar connectors*/
 #progressbar li:after {
   content: '';
@@ -109,15 +116,18 @@ body {
   left: -50%;
   top: 9px;
   z-index: -1;
-  font-family: 'Roboto', sans-serif; /*put it behind the numbers*/
+  font-family: 'Roboto', sans-serif;
+  /*put it behind the numbers*/
 }
+
 #progressbar li:first-child:after {
   /*connector not needed before the first step*/
   content: none;
   font-family: 'Roboto', sans-serif;
 }
 
-#progressbar li.active:before,  #progressbar li.active:after{
+#progressbar li.active:before,
+#progressbar li.active:after {
   background: #FCE317;
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -148,5 +158,3 @@ body {
 #msform .book_button:hover {
   background: #D6C00E;
 }
-
-

@@ -29,17 +29,10 @@ body {
   padding-bottom: 200px;
 }
 
-
-
-#heading {
-  font-family: "Raleway", "Helvetica", "sans-serif";
-  font-size: 30px;
-  color: #333333 ;
-}
 h1 {
   font-family: "Raleway", "Helvetica", "sans-serif";
   font-size: 30px;
-  color: #333333 ;
+  color: #333333;
 }
 
 p {
@@ -48,8 +41,7 @@ p {
   font-size: 30px;
 }
 
-label {
-}
+label {}
 
 a {
   color: #474747;
@@ -59,4 +51,10 @@ a {
 
 .edit {
   margin-top: 40px;
+}
+
+#heading {
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  font-size: 30px;
+  color: #333333;
 }

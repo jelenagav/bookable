@@ -1,79 +1,21 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Mono" rel="stylesheet">
-
 <div class = "yellow-wrapper">
-<div class = "container">
-<h1>Are you looking for a
-  <span class="typer" id="main" data-words="book?" data-colors="black" data-delay="100" data-deleteDelay="1000"></span>
-  <span class="cursor" data-owner="main"></span>
-</h1>
-
-<!-- <form id="content">
-  <input type="text" name="input" class="input">
-  <button type="reset" class="search"></button>
-</form> -->
-
-
-<%= form_tag books_path, method: :get, class: "content" do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "input",
-    placeholder: ""
-  %>
-  <button type="reset" class="search"></button>
-<% end %>
-<!-- <div class="wrap">
-   <div class="search">
-      <input type="text" class="searchTerm" placeholder="What book do you want to borrow?">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-     </button>
-   </div>
+  <div class = "container">
+    <h1>Are you looking for a
+      <span class="typer" id="main" data-words="book?" data-colors="black" data-delay="100" data-deleteDelay="1000"></span>
+      <span class="cursor" data-owner="main"></span>
+    </h1>
+    <%= form_tag books_path, method: :get, class: "content" do %>
+      <%= text_field_tag :query,
+      params[:query],
+      class: "input",
+      placeholder: ""
+      %>
+      <button type="reset" class="search"></button>
+    <% end %>
+    <h2 id="full-list">
+      <%= link_to books_path do %>
+        <i class="fas fa-list-ul"></i>
+      <% end  %>
+    </h2>
+  </div>
 </div>
- -->
-
-
-<h2 id="full-list">
-  <%= link_to books_path do %>
-    <i class="fas fa-list-ul"></i>
-  <% end  %>
-</h2>
-</div>
-</div>
-
-<div class = "yellow-wrapper"></div>
-<!-- <div class = "white-wrapper">
-<div class = "container" id = "white-container">
-  <h1 class = "white-font">
-  <span class="typer" id="main" data-words="Recommendations" data-colors="white" data-delay="100" data-deleteDelay="1000"></span>
-  <span class="cursor" data-owner="main"></span>
-</h1>
-
-
-<!-- trying scrolls -->
-<!-- <div class="scrolling-wrapper">
-  <div class="card"><h2><img src="https://fivebooks.com/app/uploads/2016/05/0141183411.01.LZ_.jpg" alt=""></h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-</div> --> -->
-<!-- trying scrolls end-->
-
-
-
-</div>
-</div>
-<!--
-<div id="social">
-      <a class="facebookBtn smGlobalBtn" href="#" ></a>
-      <a class="twitterBtn smGlobalBtn" href="#" ></a>
-      <a class="pinterestBtn smGlobalBtn" href="#" ></a>
-</div> -->
-
-
