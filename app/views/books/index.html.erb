@@ -1,39 +1,38 @@
 <div id="space">
-    <h1 id="heading"> Available Books (<%= @books.length %>) </h1>
-    <div id="geo-links">
+  <h1 id="heading"> Available Books (<%= @books.length %>) </h1>
+  <div id="geo-links">
     <%= form_tag books_path, class: "geo-buttons", method: :get do %>
       <%= hidden_field_tag :near,
-        current_user.address,
-        class: "form-control",
-        placeholder: "Find a movie"
+      current_user.address,
+      class: "form-control",
+      placeholder: "Find a movie"
       %>
       <%= button_tag 'Near  me', type: 'near', class: "geo-buttons-style" %>
     <% end %>
-
-    <%= form_tag books_path, class: "geo-buttons", method: :get do %>
+      <%= form_tag books_path, class: "geo-buttons", method: :get do %>
       <%= button_tag 'All', class: "geo-buttons-style" %>
-      <% end %>
-    </div>
+    <% end %>
+  </div>
 </div>
-  <div class="container">
-    </div>
+<div class="container">
+</div>
 <div class="cards-index">
   <% @books.each do |book| %>
   <div class="card-index">
     <div class="card-left">
-     <% if book.photo.present? %> <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" /> <% end %>
+      <% if book.photo.present? %> <img src="<%= cl_image_path book.photo, height: 420, width: 262, crop: :fill %>" /> <% end %>
     </div>
     <div class="card-right">
       <div class="book-text">
         <h1> <%= book.title %> </h1>
         <h2> <%= book.author %>  </h2>
         <p>
-         <%= book.description.truncate(120, separator: /\s/) %> </p>
+        <%= book.description.truncate(120, separator: /\s/) %> </p>
       </div>
       <div class="book-btn">
-       <div id="link"> <button type="button" id="coloring-button-cards"> <%= link_to "more", book_path(book) %> </button></div>
+        <div id="link"> <button type="button" id="coloring-button-cards"> <%= link_to "more", book_path(book) %> </button></div>
       </div>
     </div>
-  </div><% end %>
+  </div>
+  <% end %>
 </div>
-

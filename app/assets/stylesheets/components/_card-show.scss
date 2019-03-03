@@ -1,4 +1,4 @@
-.container-show{
+.container-show {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 90px;
@@ -8,10 +8,9 @@
   background: white;
   display: flex;
   vertical-align: center;
-  position:relative;
+  position: relative;
   border: 1px solid #dbdbdb;
 }
-
 
 .card-show-left img {
   height: 100%;
@@ -24,6 +23,7 @@
 .card-show-right {
   padding: 20px;
 }
+
 .card-show-right h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
@@ -33,6 +33,7 @@
   padding-left: 0px;
 
 }
+
 .card-show-right h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -56,8 +57,8 @@
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
-  text-align:left;
-  color:#474747;
+  text-align: left;
+  color: #474747;
 }
 
 .card-product .card-product-infos {
@@ -144,5 +145,3 @@
   cursor: pointer;
   outline: none;
 }
-
-
