@@ -2,17 +2,17 @@
   <h1 id="heading"> Available Books (<%= @books.length %>) </h1>
   <div id="geo-links">
     <% if current_user %>
-    <%= form_tag books_path, class: "geo-buttons", method: :get do %>
-      <%= hidden_field_tag :near,
-      current_user.address,
-      class: "form-control",
-      placeholder: "Find a movie"
-      %>
-      <%= button_tag 'Near  me', type: 'near', class: "geo-buttons-style" %>
-    <% end %>
       <%= form_tag books_path, class: "geo-buttons", method: :get do %>
-      <%= button_tag 'All', class: "geo-buttons-style" %>
-    <% end %>
+        <%= hidden_field_tag :near,
+        current_user.address,
+        class: "form-control",
+        placeholder: "Find a movie"
+        %>
+        <%= button_tag 'Near  me', type: 'near', class: "geo-buttons-style" %>
+      <% end %>
+        <%= form_tag books_path, class: "geo-buttons", method: :get do %>
+        <%= button_tag 'All', class: "geo-buttons-style" %>
+      <% end %>
     <% end %>
   </div>
 </div>
