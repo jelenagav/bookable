@@ -1,0 +1,5 @@
+meta_product_name: "Bookable"
+meta_title: "Bookable - Share a book"
+meta_description: "Share a book or get a book from people around you!"
+meta_image: "landing_page.png" # should exist in `app/assets/images/`
+twitter_account: "@BordeleauDavid"   # required for Twitter Cards
