@@ -195,35 +195,6 @@ body.pages.home {
     transition-delay: 0.4s;
   }
 
-  .close:before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 4px;
-    margin-top: -1px;
-    margin-left: -13px;
-    background-color: #fff;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-  }
-
-  .close:after {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 4px;
-    background-color: #fff;
-    margin-top: -1px;
-    margin-left: -13px;
-    cursor: pointer;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
   .square {
     box-sizing: border-box;
     padding: 0 40px 0 10px;
